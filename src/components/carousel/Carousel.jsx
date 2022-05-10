@@ -114,7 +114,7 @@ export default function CarouselFunc() {
       </Box>
 
       <Box
-        marginLeft={-16}
+        marginLeft={[0, -16]}
         width={800}
         display={"flex"}
         flexDirection={"row"}
@@ -125,7 +125,7 @@ export default function CarouselFunc() {
         <Text w={[80, 16]} fontSize={16}>
           Gráfico :{" "}
         </Text>
-        <Select w={[800, 120]} marginRight={4} size={"xs"} placeholder="Emitidos">
+        <Select w={[800, 120, 10]} marginRight={4} size={"xs"} placeholder="Emitidos">
           <option value="option1">Recebidos</option>
           <option value="option2">Quantidade</option>
           <option value="option3">Volumes</option>
@@ -133,7 +133,7 @@ export default function CarouselFunc() {
         <Text w={[80, 16]} fontSize={16}>
           Intervalo :
         </Text>
-        <Select w={[800, 150]} marginRight={4} size={"xs"} placeholder="10 segundos">
+        <Select w={[800, 150, 10]} marginRight={4} size={"xs"} placeholder="10 segundos">
           <option value="option1">20 segundos</option>
           <option value="option2">30 segundos</option>
           <option value="option3">1 segundo</option>
