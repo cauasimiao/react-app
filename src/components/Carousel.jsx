@@ -11,7 +11,6 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import "/home/crocolisco/Documentos/projetos/react-app/src/styles/carousel.css";
 
 export default function CarouselFunc() {
   const data = [
