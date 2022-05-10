@@ -58,7 +58,7 @@ function App() {
 
       {/* ACTIONS */}
 
-      <HStack spacing={20}>
+      <HStack flexDirection={["column", "column", "row"]} spacing={20}>
         <VStack marginLeft={10} marginTop={30}>
           <HStack spacing={7}>
             <VStack
@@ -151,42 +151,9 @@ function App() {
           </HStack>
         </VStack>{" "}
         {/* CHART */}
-        <Box w={"40%"}>
+        <Box w={["100%", "65%", "40%"]}>
           <CarouselFunc />
         </Box>
-        {/* <Box>
-          <Center>
-            <Text fontSize={32}>Emissões</Text>
-          </Center>
-
-          <Center paddingBottom={4}>
-            <Text fontSize={16}>
-              Quantidade de pedidos: 250 / Quantidade de volumes: 250
-            </Text>
-          </Center>
-
-          <BarChart
-            width={400}
-            height={300}
-            data={data}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="date" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="quantidade" fill="gray" />
-            <Bar dataKey="volumes" fill="blue" />
-            <Bar dataKey="pedidos" fill="pink" />
-            <Bar dataKey="produtos" fill="green" />
-          </BarChart>
-        </Box> */}
       </HStack>
     </>
   );
