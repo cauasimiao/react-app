@@ -1,0 +1,31 @@
+.carousel carousel-slider {
+  width: 50% !important;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: transparent !important;
+}
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #000 !important;
+}
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #000 !important;
+}
+.carousel .control-dots .dot {
+  -webkit-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 90%);
+  background: #000 !important;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.recharts-surface {
+    width: 500;
+}
