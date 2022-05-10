@@ -57,13 +57,13 @@ export default function CarouselFunc() {
         </Text>
       </Center>
 
-      <Box w={{ base: "300px", md: "400px", lg: "500px" }}>
+      <Box w={{ base: 'none', md: "400px", lg: "500px" }}>
         <Carousel
           showStatus={false}
           showArrows={true}
           focusOnSelect={true}
-          centerMode={false}
-          //centerSlidePercentage={100}
+          centerMode={true}
+          centerSlidePercentage={100}
           responsive={responsive}
           //afterChange={function (previousSlide, _ref) {}}
           slidesToSlide={1}
@@ -72,7 +72,6 @@ export default function CarouselFunc() {
           {chartData.map((item) => {
             return (
               <BarChart
-                minWidth={500}
                 width={500}
                 height={300}
                 data={item}
@@ -115,7 +114,7 @@ export default function CarouselFunc() {
       </Box>
 
       <Box
-        marginLeft={-10}
+        marginLeft={-16}
         width={790}
         display={"flex"}
         flexDirection={"row"}
