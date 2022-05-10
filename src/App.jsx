@@ -29,7 +29,7 @@ import {
 import { Carousel } from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import * as React from "react";
-import CarouselFunc from "./components/Carousel";
+import CarouselFunc from "./components/carousel/Carousel";
 
 function App() {
   const responsive = {
@@ -151,7 +151,7 @@ function App() {
           </HStack>
         </VStack>{" "}
         {/* CHART */}
-        <Box w={'40%'}>
+        <Box w={"40%"}>
           <CarouselFunc />
         </Box>
         {/* <Box>

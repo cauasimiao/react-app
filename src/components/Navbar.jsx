@@ -54,7 +54,7 @@ const NavLink = ({ children }) => (
 );
 
 export default function withAction() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen } = useDisclosure();
   const [codeChange, setCodeChange] = useState('');
   const navbarHeight = 12;
 
