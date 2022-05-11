@@ -57,7 +57,7 @@ export default function CarouselFunc() {
         </Text>
       </Center>
 
-      <Box w={{ base: "none", md: "400px", lg: "500px" }}>
+      <Box>
         <Carousel
           showStatus={false}
           showArrows={true}
@@ -111,86 +111,90 @@ export default function CarouselFunc() {
             );
           })}
         </Carousel>
-      </Box>
+        <HStack ml={[0, -16]}>
+          <HStack>
+            <Text fontSize={16}>Gráfico:</Text>
+            <Select
+              w={[800, 140]}
+              marginRight={2}
+              size={"xs"}
+              placeholder="Emitidos"
+            >
+              <option value="option1">Recebidos</option>
+              <option value="option2">Quantidade</option>
+              <option value="option3">Volumes</option>
+            </Select>
+          </HStack>
+          <HStack marginLeft={2}>
+            <Text w={16} fontSize={16}>
+              Intervalo:
+            </Text>
+            <Select
+              w={[800, 150]}
+              marginRight={2}
+              size={"xs"}
+              placeholder="10 segundos"
+            >
+              <option value="option1">20 segundos</option>
+              <option value="option2">30 segundos</option>
+              <option value="option3">1 segundo</option>
+            </Select>
+          </HStack>
 
-      <Box
-        marginLeft={[0, -16]}
-        width={850}
-        display={"flex"}
-        flexDirection={"row"}
-        justifyContent={"flex-start"}
-        alignItems={"center"}
-        flexWrap= {['wrap', 'wrap', 'nowrap']}
-      >
-        <Text w={16} fontSize={16}>
-          Gráfico :{" "}
-        </Text>
-        <Select w={[800, 140]} marginRight={4} size={"xs"} placeholder="Emitidos">
-          <option value="option1">Recebidos</option>
-          <option value="option2">Quantidade</option>
-          <option value="option3">Volumes</option>
-        </Select>
-        <Text w={16} fontSize={16}>
-          Intervalo :{" "}
-        </Text>
-        <Select w={[800, 150]} marginRight={4} size={"xs"} placeholder="10 segundos">
-          <option value="option1">20 segundos</option>
-          <option value="option2">30 segundos</option>
-          <option value="option3">1 segundo</option>
-        </Select>
-        <Text w={[80, 16]} fontSize={16}>
-          Período :
-        </Text>
-        <ButtonGroup size={"xs"} isAttached variant="outline">
-          <Button
-            bgColor={oneDay ? "#ADD8E6" : "white"}
-            onClick={() => {
-              setThirtyOneDays(false);
-              setOneDay(true);
-              setFifteenDays(false);
-              setSevenDays(false);
-            }}
-            mr="-px"
-          >
-            1 dia
-          </Button>
-          <Button
-            bgColor={sevenDays ? "#ADD8E6" : "white"}
-            onClick={() => {
-              setSevenDays(true);
-              setOneDay(false);
-              setFifteenDays(false);
-              setThirtyOneDays(false);
-            }}
-            mr="-px"
-          >
-            7 dias
-          </Button>
-          <Button
-            bgColor={fifteenDays ? "#ADD8E6" : "white"}
-            onClick={() => {
-              setThirtyOneDays(false);
-              setOneDay(false);
-              setFifteenDays(true);
-              setSevenDays(false);
-            }}
-            mr="-px"
-          >
-            15 dias
-          </Button>
-          <Button
-            bgColor={thirtyOneDays ? "#ADD8E6" : "white"}
-            onClick={() => {
-              setSevenDays(false);
-              setOneDay(false);
-              setFifteenDays(false);
-              setThirtyOneDays(true);
-            }}
-            mr="-px"
-          >
-            31 dias
-          </Button>
-        </ButtonGroup>
+          <Text ml={2} w={[80, 16]} fontSize={16}>
+            Período:
+          </Text>
+          <ButtonGroup ml={4} size={"xs"} isAttached variant="outline">
+            <Button
+              bgColor={oneDay ? "#ADD8E6" : "white"}
+              onClick={() => {
+                setThirtyOneDays(false);
+                setOneDay(true);
+                setFifteenDays(false);
+                setSevenDays(false);
+              }}
+              mr="-px"
+            >
+              1 dia
+            </Button>
+            <Button
+              bgColor={sevenDays ? "#ADD8E6" : "white"}
+              onClick={() => {
+                setSevenDays(true);
+                setOneDay(false);
+                setFifteenDays(false);
+                setThirtyOneDays(false);
+              }}
+              mr="-px"
+            >
+              7 dias
+            </Button>
+            <Button
+              bgColor={fifteenDays ? "#ADD8E6" : "white"}
+              onClick={() => {
+                setThirtyOneDays(false);
+                setOneDay(false);
+                setFifteenDays(true);
+                setSevenDays(false);
+              }}
+              mr="-px"
+            >
+              15 dias
+            </Button>
+            <Button
+              bgColor={thirtyOneDays ? "#ADD8E6" : "white"}
+              onClick={() => {
+                setSevenDays(false);
+                setOneDay(false);
+                setFifteenDays(false);
+                setThirtyOneDays(true);
+              }}
+              mr="-px"
+            >
+              31 dias
+            </Button>
+          </ButtonGroup>
+        </HStack>
       </Box>
     </>
   );
