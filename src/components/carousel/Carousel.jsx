@@ -111,11 +111,11 @@ export default function CarouselFunc() {
             );
           })}
         </Carousel>
-        <HStack ml={[0, -16]}>
+        <HStack flexWrap={['wrap', 'wrap', 'nowrap']} ml={[0, -16]}>
           <HStack>
             <Text fontSize={16}>Gráfico:</Text>
             <Select
-              w={[800, 140]}
+              w={[, 140]}
               marginRight={2}
               size={"xs"}
               placeholder="Emitidos"
@@ -130,7 +130,7 @@ export default function CarouselFunc() {
               Intervalo:
             </Text>
             <Select
-              w={[800, 150]}
+              w={[, 150]}
               marginRight={2}
               size={"xs"}
               placeholder="10 segundos"
