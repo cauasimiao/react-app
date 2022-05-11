@@ -131,7 +131,7 @@ export default function CarouselFunc() {
           <option value="option3">Volumes</option>
         </Select>
         <Text w={[80, 16]} fontSize={16}>
-          Intervalo :
+          Intervalo :{" "}
         </Text>
         <Select w={[800, 150]} marginRight={4} size={"xs"} placeholder="10 segundos">
           <option value="option1">20 segundos</option>
