@@ -58,7 +58,7 @@ function App() {
 
       {/* ACTIONS */}
 
-      <HStack flexDirection={["column", "column", "row"]} spacing={20}>
+      <HStack justifyContent={'center'} flexDirection={["column", "column", "row"]} spacing={20}>
         <VStack marginLeft={10} marginTop={30}>
           <HStack spacing={7}>
             <VStack
