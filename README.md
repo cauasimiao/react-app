@@ -23,4 +23,4 @@ e
 npm run dev
 ```
 
-O projeto estará na porta 3001.
+O projeto estará na porta 3000.
